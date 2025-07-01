@@ -9,7 +9,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #F9F8ED;
+  background-color: #f9f8ed;
   font-family: "Founders Grotesk";
 }
 
@@ -47,6 +47,19 @@ main {
   height: 100%;
   width: 100%;
 }
+main .image-container {
+  background-color: #f9f8ed;
+  height: 90%;
+  width: 100%;
+  border-radius: 15px;
+}
+main .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
 main .hero-section .video-container {
   height: 90vh;
   width: 100%;
@@ -55,10 +68,8 @@ main .hero-section .video-container {
 }
 main .hero-section .video-container video {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top center;
-     object-position: top center;
+  object-fit: cover;
+  object-position: top center;
   width: 100%;
 }
 main .hero-section .video-container .marquee-container {
@@ -92,6 +103,7 @@ main .featured-work-section {
   height: 150vh;
   width: 100%;
   padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }
 main .featured-work-section .feature-title-container {
   display: flex;
@@ -130,28 +142,13 @@ main .featured-work-section .feature-container {
   background-color: #1c1c1c;
   padding: 0.5rem;
 }
-main .featured-work-section .feature-container .image-container {
-  background-color: #F9F8ED;
-  height: 90%;
-  width: 100%;
-  border-radius: 15px;
-}
-main .featured-work-section .feature-container .image-container img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border-radius: 15px;
-}
 main .featured-work-section .feature-container .feature-info-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1rem 0.5rem;
-  color: #F9F8ED;
+  color: #f9f8ed;
   height: 10%;
 }
 main .featured-work-section .feature-container .feature-info-container .info-1 {
@@ -176,8 +173,43 @@ main .featured-work-section .feature-container .feature-info-container .info-2 {
 main .featured-work-section .feature-container .feature-info-container .info-2 p {
   padding: 0.4rem 0.3rem 0.2rem 0.3rem;
   font-size: 0.6rem;
-  border: 1px solid #F9F8ED;
+  border: 1px solid #f9f8ed;
   border-radius: 20px;
+}
+main .work-container {
+  height: 120vh;
+  margin-top: 15rem;
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: 45% 54.5%;
+  padding: 1rem 2rem;
+}
+main .work-container .card {
+  height: 100%;
+  width: 100%;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+main .work-container-2 {
+  height: 50vh;
+  display: grid;
+  margin-bottom: 5rem;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: 54.5% 45%;
+  padding: 1rem 2rem;
+}
+main .work-container-2 .card {
+  height: 100%;
+  width: 100%;
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  padding: 0.5rem;
 }
 
 @keyframes marquee {
