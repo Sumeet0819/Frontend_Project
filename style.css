@@ -176,7 +176,45 @@ main .featured-work-section .feature-container .feature-info-container .info-2 p
   border: 1px solid #f9f8ed;
   border-radius: 20px;
 }
-main .work-container {
+main .work-main-container {
+  display: flex;
+  flex-direction: column;
+}
+main .work-main-container .work-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0.5rem;
+  color: #f9f8ed;
+  height: 10%;
+}
+main .work-main-container .work-info-container .work-info-1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main .work-main-container .work-info-container .work-info-1 h2 {
+  font-weight: 500;
+}
+main .work-main-container .work-info-container .work-info-1 p {
+  font-size: 1.5rem;
+}
+main .work-main-container .work-info-container .work-info-2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+main .work-main-container .work-info-container .work-info-2 p {
+  padding: 0.4rem 0.3rem 0.2rem 0.3rem;
+  font-size: 0.6rem;
+  border: 1px solid #f9f8ed;
+  border-radius: 20px;
+}
+main .work-main-container .work-container {
   height: 120vh;
   margin-top: 15rem;
   display: grid;
@@ -187,14 +225,14 @@ main .work-container {
   grid-template-columns: 45% 54.5%;
   padding: 1rem 2rem;
 }
-main .work-container .card {
+main .work-main-container .work-container .card {
   height: 100%;
   width: 100%;
   background-color: #1c1c1c;
   border-radius: 15px;
   padding: 0.5rem;
 }
-main .work-container-2 {
+main .work-main-container .work-container-2 {
   height: 50vh;
   display: grid;
   margin-bottom: 5rem;
@@ -204,12 +242,42 @@ main .work-container-2 {
   grid-template-columns: 54.5% 45%;
   padding: 1rem 2rem;
 }
-main .work-container-2 .card {
+main .work-main-container .work-container-2 .card {
   height: 100%;
   width: 100%;
   background-color: #1c1c1c;
   border-radius: 15px;
   padding: 0.5rem;
+}
+main .quote-container-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 25rem;
+}
+main .quote-container-section .text h1 {
+  font-size: 8.5rem;
+  font-weight: 100;
+  letter-spacing: -10px;
+}
+main .quote-container-section .component {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  border-radius: 100px;
+  background-color: #000;
+}
+main .quote-container-section .component h3 {
+  color: #f9f8ed;
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: capitalize;
 }
 
 @keyframes marquee {
