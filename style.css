@@ -52,13 +52,17 @@ main .image-container {
   height: 90%;
   width: 100%;
   border-radius: 15px;
+  overflow: hidden;
 }
 main .image-container img {
   height: 100%;
   width: 100%;
+  position: relative;
   object-fit: cover;
   object-position: center;
   border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 main .hero-section .video-container {
   height: 90vh;
@@ -260,9 +264,8 @@ main .quote-container-section {
   margin-top: 25rem;
 }
 main .quote-container-section .text h1 {
-  font-size: 8.5rem;
+  font-size: 5.5vw;
   font-weight: 100;
-  letter-spacing: -10px;
 }
 main .quote-container-section .component {
   height: 20vh;
